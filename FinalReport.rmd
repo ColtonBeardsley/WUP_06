@@ -120,6 +120,12 @@ This tells us that there is absolutely a difference somewhere in the data, to fi
 fisherXY(mydata$race,mydata$cappun,printAll = FALSE,confL = 0.99)
 ```
 
+While running a Fisher Test at with a confidence level of 99% we see where the critical p-value is.
+
+The relationship between the races; white and black is where the greatest difference is with the previous small p-value of $2.2 \text{ x } 10^{-16}$
+
+We also wee that most of the p-values are lower than 0.05 but this has little application here as one of the variables is dramatically different.
+
 
 ## More data version
 
