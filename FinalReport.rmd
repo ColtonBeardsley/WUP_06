@@ -90,7 +90,8 @@ We do not see this trend when looking looking at other races, in fact more black
 table1 <- xtabs(~race + cappun, data=mydata)
 rowPerc(table1)
 ```
-
+As the data shows, almost double the percentage of white people are in favor of capitol punishment.
+The black and other races are much closer to a 50:50 split.
 
 
 ## Now with More data
