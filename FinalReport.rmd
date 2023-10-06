@@ -116,6 +116,11 @@ The p-value us also extremely small at $2.2 \text{ x } 10^{-16}$
 This tells us that there is absolutely a difference somewhere in the data, to find where we will need a Fisher Test.
 
 
+```{r}
+fisherXY(mydata$race,mydata$cappun,printAll = FALSE,confL = 0.99)
+```
+
+
 ## More data version
 
 
