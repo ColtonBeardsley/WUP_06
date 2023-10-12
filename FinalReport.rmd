@@ -102,7 +102,12 @@ The black and other races are much closer to a 50:50 split.
 chisqtestGC(table1)
 ```
 
+$\Huge\chi^2=\sum\frac{(O-E)^2}{O}$
 
+In the above Chi-Squared test we see that we both have Chi-Squared Statistic much higher than the critical value given our degrees of freedom.
+This higher number shows us that most of the data set is different from its expected value.
+The p-value us also extremely small at $2.2 \text{ x } 10^{-16}$
+This tells us that there is absolutely a difference somewhere in the data, to find where we will need a Fisher Test.
 
 # Discussion and Conclusion
 
