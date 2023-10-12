@@ -90,7 +90,8 @@ table1 <- xtabs(~cappun + race, data=mydata)
 colPerc(table1)
 ```
 
-
+According to the table, almost double the percentage of white people are in favor of capitol punishment.
+The black and other races are much closer to a 50:50 split.
 
 
 ## Inferential Results
