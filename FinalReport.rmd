@@ -109,6 +109,27 @@ This higher number shows us that most of the data set is different from its expe
 The p-value us also extremely small at $2.2 \text{ x } 10^{-16}$
 This tells us that there is absolutely a difference somewhere in the data, to find where we will need a Fisher Test.
 
+```{r ,eval=FALSE, include=TRUE}
+FisherTable(table1,confL = 0.95,printAll = TRUE)
+```
+```{r}
+# Filter only the data I want.
+sub_whiteBlack <- mydata %>% filter(race %in% c("white", "black"))
+# Factor so that race is the primary factor.
+sub_whiteBlack$race <- factor(sub_whiteBlack$race, levels = c("white", "black") )
+# Load into table for fisher.
+table2 <- xtabs(~cappun + race, data=sub_whiteBlack)
+# Save fisher into results and print.
+fisherResult <- fisher.test(table2)
+fisherResult
+# Determine and print the confidence interval 
+low=(fisherResult$conf.int[1]/(fisherResult$conf.int[1] + 1))*100
+hi=(fisherResult$conf.int[2]/(fisherResult$conf.int[2] + 1))*100
+print("Confidence Interval")
+low
+hi
+```
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
