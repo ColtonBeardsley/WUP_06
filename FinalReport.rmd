@@ -71,6 +71,10 @@ ggplot(mydata, aes(x = race, fill = cappun)) +
         plot.title = element_text(hjust = 0.5,size = 18))
 ```
 
+We see in the graphical representation of our data that a disproportionate amount of white people are in favor of capitol punishment.
+
+We do not see this trend when looking looking at other races, in fact more black people oppose capitol punishment.
+
 ## Now with LESS data (more variables give less data due to NA's) create the approate graphic displays to answer the question.
 
 
