@@ -39,9 +39,17 @@ IF there is a difference in attitude, where in the data set is the difference?
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
-```{r}
+```{r include=TRUE}
 head(mydata)
 ```
+
+Looking at our data we see that the problem is Categorical~Categorical meaning that we will need to use the Cat_Cat helper file from the CandP set.
+We will expect to use a bar chart to visually express our data and a table to show the numerical summary of our data.
+
+For our inferential results we will use a Chi-Squared test. This will only tell us if there is a difference and not where the difference is.
+
+If there is a difference in the data, to identify its sourse we will run a FisherXY test, which loops the Fisher Test for all combinations.
+
 
 # Results
 
