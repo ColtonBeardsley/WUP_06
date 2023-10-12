@@ -29,10 +29,11 @@ mydata <- na.omit(mydata)
 Is attitude toward capitol punishment (cappun) independent of race (race)?
 If not, then whose view differs from whom??
 
-```{r eval=FALSE}
-mydata <- mydata %>%
-mutate(across(where(is.character), as.factor))
-```
+$H_0$ There is no difference in the data when comparing race and attitude toward capital punishment.
+
+$H_A$ There is a difference in when comparing the race and attitude toward capital punishment.
+
+IF there is a difference in attitude, where in the data set is the difference?
 
 # Methods
 
