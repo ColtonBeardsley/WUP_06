@@ -130,6 +130,11 @@ low
 hi
 ```
 
+We found the difference, while running a Fisher Test at with a confidence level of 99% we see where the critical p-value is.
+
+The relationship between the races; white and black is where the greatest difference is with the previous small p-value of $2.2 \text{ x } 10^{-16}$
+We also wee that most of the p-values are lower than 0.05 but this has little application here as one of the variables is dramatically different.
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
